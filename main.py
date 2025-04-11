@@ -1,13 +1,13 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-from utils.supports import measure_execution_time, generate_array_with_duplicates, generate_large_array
+from utils.supports import measure_execution_time, generate_array_without_duplicates, generate_large_array
 from algorithms.selectionSort import selectionSort
 from algorithms.hasDuplicates import hasDuplicates
 from algorithms.allPairs import allPairs
 
 def main():
-    input_sizes = [50 * i for i in range(1, 21)]
+    input_sizes = [100 * i for i in range(1, 21)]
 
     sort_times = []
     duplicate_times = []
@@ -15,7 +15,7 @@ def main():
 
     for size in input_sizes:
         large_array = generate_large_array(size)
-        duplicates = generate_array_with_duplicates(size)
+        duplicates = generate_array_without_duplicates(size)
         pairs = generate_large_array(size)
 
         sort_time = measure_execution_time(selectionSort, large_array)

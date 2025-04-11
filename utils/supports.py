@@ -12,18 +12,14 @@ def measure_execution_time(algorithm, *args):
     algorithm(*args)
     return time.time() - start_time
 
-def generate_array_with_duplicates(size, duplication_factor=0.1):
+def generate_array_without_duplicates(size):
     """
-    Generate a list of integers of a given size with some duplicates.
+    Generate a list of unique integers of a given size (i.e., no duplicates).
 
     :param size: Total size of the array.
-    :param duplication_factor: Fraction of elements that will be duplicates.
-    :return: Array with intentional duplicates.
+    :return: Array with unique elements.
     """
-    base_size = int(size * (1 - duplication_factor))
-    base_elements = [random.randint(1, 1000) for _ in range(base_size)]
-    duplicates = random.choices(base_elements, k=size - base_size)
-    return base_elements + duplicates
+    return random.sample(range(1, size * 10), size)
 
 def generate_large_array(size):
     """
