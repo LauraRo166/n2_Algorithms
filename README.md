@@ -22,6 +22,7 @@ The following algorithms with **O(n²)** time complexity are implemented:
 
 ## Unit and Coverage Testing
 
+![image](https://github.com/user-attachments/assets/581620ad-1457-4613-9474-ee9556a82a46)
 
 
 Each function has associated unit tests covering:
@@ -34,11 +35,24 @@ Each function has associated unit tests covering:
 
 A script compares execution times across growing input sizes and generates a chart for visualization:
 
+![image](https://github.com/user-attachments/assets/d18b2478-f63e-4812-a1df-879fa731e431)
 
-**Explanation:**
-- The plot shows the typical quadratic time growth.
-- Input sizes grow linearly, but execution time grows roughly by the square.
-- This highlights the inefficiency of O(n²) algorithms for large inputs.
+
+**Specific Cases**
+
+
+***Duplicates***
+
+![image](https://github.com/user-attachments/assets/dc8a8388-9784-4b90-921f-da96a24f4c3f)
+
+***Selection Sort***
+
+![image](https://github.com/user-attachments/assets/285d7c76-7a05-46c9-8220-35f75b319516)
+
+***Selection Sort vs Duplicates***
+
+![image](https://github.com/user-attachments/assets/f9b52e0d-a350-4f54-8b5d-736608c2d884)
+
 
 
 
