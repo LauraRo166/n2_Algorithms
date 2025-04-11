@@ -35,7 +35,7 @@ Each function has associated unit tests covering:
 
 A script compares execution times across growing input sizes and generates a chart for visualization:
 
-![image](https://github.com/user-attachments/assets/f38de9cf-2c6a-4e10-bea8-60d3da146640)
+![image](https://github.com/user-attachments/assets/d18b2478-f63e-4812-a1df-879fa731e431)
 
 
 **Specific Cases**
